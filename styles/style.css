@@ -51,7 +51,16 @@ h1 {
 	font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 	line-height: 82.5%;
 	color: var(--title-color);
+}
+
+.text-decor {
 	text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+h2 {
+	font-size: 18px;
+	line-height: 23.4px;
+	color: var(--accent-color);
 }
 
 h3 {
@@ -59,4 +68,52 @@ h3 {
 	line-height: 23.4px;
 	color: var(--main-color);
 	background: var(--accent-color);
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 23.4px;
+	color: var(--main-color);
+	background: var(--accent-color);
+	font-weight: normal;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	align-items: center;
+	padding: 10px;
+}
+
+.section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.block {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.block__text {
+	color: var(--text-color);
+}
+
+.gallery__img {
+	width: 100%;
+}
+
+.footer {
+	padding: 285px 13px;
+}
+
+.footer__title {
+	font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+	line-height: 82.5%;
+	color: var(--title-color);
+	font-weight: bold;
 }
