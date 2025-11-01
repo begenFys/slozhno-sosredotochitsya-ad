@@ -84,11 +84,12 @@
 	margin-top: 55px;
 }
 
-h1 {
+.title {
 	font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 	line-height: 82.5%;
 	color: var(--title-color);
 	text-shadow: 4px 4px 0 var(--accent-color);
+	font-weight: bold;
 }
 
 .text-decor {
@@ -203,17 +204,13 @@ h4 {
 	align-items: center;
 }
 
-.footer__title {
-	font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-	line-height: 82.5%;
-	color: var(--title-color);
-	font-weight: bold;
-	text-shadow: 4px 4px 0 var(--accent-color);
-}
-
 @media (width >= 768px) {
 	.page {
 		gap: 60px;
+	}
+
+	.title {
+		font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 	}
 
 	.header {
@@ -246,6 +243,7 @@ h4 {
 	}
 
 	.main {
+		gap: 80px;
 		padding: 0 20px;
 	}
 
