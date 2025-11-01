@@ -167,6 +167,10 @@ h4 {
 	gap: 20px;
 }
 
+.section-gallery {
+	gap: 10px;
+}
+
 .wrapper {
 	width: 100%;
 	display: flex;
@@ -257,6 +261,10 @@ h4 {
 		gap: 20px;
 	}
 
+	.section-featured h2 {
+		width: 236px;
+	}
+
 	.gallery {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
@@ -308,6 +316,14 @@ h4 {
 	.header__subtitle {
 		margin-top: 114px;
 		max-width: 491px;
+	}
+
+	.section {
+		grid-template-columns: 315px 1fr;
+	}
+
+	.section-featured h2 {
+		width: 315px;
 	}
 
 	.section-featured .wrapper {
