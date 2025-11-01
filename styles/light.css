@@ -12,6 +12,10 @@
 	--background-url: url("../images/cover-image-light.png");
 }
 
+.theme-light .decorated-elem {
+	display: none;
+}
+
 @media (prefers-color-scheme: light) {
 	:root {
 		--main-color: #fff1f7;
@@ -25,5 +29,9 @@
 		--title-h3-color: #353430;
 		--title-h4-color: #353430;
 		--background-url: url("../images/cover-image-light.png");
+	}
+
+	.theme-auto .decorated-elem {
+		display: none;
 	}
 }
