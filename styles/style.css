@@ -17,6 +17,7 @@
 	background-image: var(--background-url);
 	background-attachment: fixed;
 	background-position: center center;
+	width: 100%;
 }
 
 .header__theme-menu {
@@ -87,6 +88,13 @@ h4 {
 }
 
 .section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.wrapper {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
