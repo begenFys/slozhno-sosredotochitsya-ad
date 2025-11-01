@@ -1,5 +1,62 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	font-family: "IBM Plex mono", sans-serif;
+	font-size: 18px;
+	line-height: 23.4px;
+	background: var(--main-color);
+}
+
+.header {
+	padding: 76.5px 10px 66px 10px;
+	display: flex;
+	flex-direction: column;
+	background-image: var(--background-url);
+	background-attachment: fixed;
+	background-position: center center;
+}
+
+.header__theme-menu {
+	margin-bottom: 65px;
+	align-self: flex-end;
+}
+
+.header__theme-menu-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.header__theme-menu-button {
+	color: var(--accent-color);
+	background: transparent;
+	border: none;
+	text-transform: lowercase;
+}
+
+.header__theme-menu-button_active {
+	border: 1px solid var(--accent-color);
+	padding: 1.5px 13px;
+}
+
+.header__subtitle {
+	margin-top: 55px;
+}
+
+h1 {
+	font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+	line-height: 82.5%;
+	color: var(--title-color);
+	text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 23.4px;
+	color: var(--main-color);
+	background: var(--accent-color);
 }
