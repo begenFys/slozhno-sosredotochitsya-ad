@@ -17,6 +17,8 @@
 	background-image: var(--background-url);
 	background-attachment: fixed;
 	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	width: 100%;
 }
 
@@ -84,7 +86,7 @@ h4 {
 	flex-direction: column;
 	gap: 50px;
 	align-items: center;
-	padding: 10px;
+	padding: 0 10px;
 }
 
 .section {
@@ -102,6 +104,7 @@ h4 {
 }
 
 .block {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -113,10 +116,12 @@ h4 {
 
 .gallery__img {
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .footer {
-	padding: 285px 13px;
+	padding: 285px 0;
 }
 
 .footer__title {
@@ -124,4 +129,109 @@ h4 {
 	line-height: 82.5%;
 	color: var(--title-color);
 	font-weight: bold;
+}
+
+@media (width >= 768px) {
+	.page {
+		gap: 60px;
+	}
+
+	.header {
+		padding: 192px 20px 183px 0;
+	}
+
+	.header__theme-menu {
+		margin-bottom: 173px;
+	}
+
+	.header__subtitle {
+		align-self: end;
+		margin-top: 162px;
+		max-width: 364px;
+	}
+
+	.main {
+		padding: 0 20px;
+	}
+
+	.section {
+		display: grid;
+		grid-template-columns: 236px 1fr;
+		gap: 20px;
+	}
+
+	.section-featured {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+		grid-template-rows: repeat(3, auto);
+		gap: 20px;
+		height: 780px;
+	}
+
+	.gallery__img:first-child {
+		grid-column: 1 / span 2;
+		grid-row: 1;
+	}
+
+	.gallery__img:nth-child(2) {
+		grid-column: 3;
+		grid-row: 1 / span 2;
+	}
+
+	.gallery__img:nth-child(3) {
+		grid-column: 1;
+		grid-row: 2 / span 2;
+	}
+
+	.gallery__img:nth-child(4) {
+		grid-column: 2;
+		grid-row: 2;
+	}
+
+	.gallery__img:nth-child(5) {
+		grid-column: 2 / span 2;
+		grid-row: 3;
+	}
+
+	.footer {
+		padding: 462px 0;
+	}
+}
+
+@media (width >= 1024px) {
+	.header {
+		padding: 20px 20px 134px 0;
+	}
+
+	.header__theme-menu {
+		margin-bottom: 273px;
+		align-self: center;
+	}
+
+	.header__theme-menu-list {
+		flex-direction: row;
+	}
+
+	.header__subtitle {
+		margin-top: 114px;
+		max-width: 491px;
+	}
+
+	.section-featured .wrapper {
+		flex-direction: row;
+	}
+
+	.gallery {
+		height: 1091px;
+	}
+
+	.footer {
+		padding: 319px 0;
+	}
 }
